@@ -1,0 +1,14 @@
+#MOTDManager Error Dump File
+date: ''
+server-name: ''
+server-type: ''
+server-ip: ''
+server-version: ''
+motdm-version: ''
+error: ''
+files:
+ config: {}
+ variables: {}
+ players: {}
+plugins: {}
+runningMOTDS: {}

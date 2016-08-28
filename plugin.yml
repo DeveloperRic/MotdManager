@@ -1,0 +1,10 @@
+main: com.rictacius.motdManager.Main
+version: 0.1
+name: MOTDManager
+depend: [Vault,ProtocolLib]
+
+commands:
+ motdmanager:
+  description: Main command
+  usage: '/motdmanager <subcommand> [args]'
+  aliases: [motdm]

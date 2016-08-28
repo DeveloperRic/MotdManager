@@ -1,0 +1,101 @@
+#==============================================
+#DO NOT TOUCH THIS SECTION!
+#ALL ANIMATIONS HAVE BEEN DISABLED IN THIS VERSION.
+#YOUR ANIMATIONS WILL BE RE-ACTIVATED AUTOMATICALLY ONCE THEY HAVE BEEN ENABLED IN A FUTURE UPDATE
+configversion: 1
+#|
+#Variables
+#%pname% - Players name
+#%website% - Server website
+#More variables can be configured in the variables.yml file
+#|
+#All delays are in ticks (20Ticks = 1Second)
+#==============================================
+
+#Should MOTDManager change the server's MOTD?
+enabled: true
+#When the plugin gets disabled the inbuilt motd takes precedence.
+#Should MOTDManager change the default MOTD and if so which motd should it use?
+change-default-motd: false
+new-default-motd: 'offline'
+#If MOTDManager identifies an IP address as a player, what world should MOTDManager check through
+#to find out if the player has the required permission?
+perm-world: 'world'
+#How long after ping should MOTDManager update the motd for?
+refresh-timeout: 200
+#Should MOTDManager change the current players count?
+change-current-players: false
+new-current-players: 0
+#Should MOTDManager change the max players count?
+change-max-players: true
+new-max-players: 0
+#Should MOTDManager change the Server version message?
+change-version-message: true
+new-version-message: '&6%pname%, &3Join with &a%shortserverversion%'
+#Should MOTDManager change the server players list?
+change-server-playerslist: true
+new-server-playerslist:
+ - '&e&nYou can change this section in the config'
+ - ''
+ - '&6This is an example of how you can display extra info'
+ - '&6to players that havent even joined yet'
+ - ''
+ - '&cAdd your social media links'
+ - '&cServer Gamemodes'
+ - '&aAnd what ever you feel like HERE'
+#Should MOTDManager change the server's icon to the players face?
+#If the player has never joined before a befault image will be used
+change-servericon-face: true
+default-image-url: 'http://imgstocks.com/wp-content/uploads/2013/10/Download-royalty-free-abstract-line-background-vector-abstract-lines.jpg'
+#Should MOTDManager change the server's icon to a png image?
+#change-servericon-face overrides this
+change-servericon-png: false
+new-servericon-link: 'http://imgstocks.com/wp-content/uploads/2013/10/Download-royalty-free-abstract-line-background-vector-abstract-lines.jpg'
+
+#For the following the higest value takes priority,
+#If a player has access to more than one motd, the first one will be chosen.
+#The name of the motd is used for permissions, for example an motd with name 'test',
+#will require the permission 'motdmanager.motd.test'.
+#You can only use one of the animations available.
+
+motds:
+ default:
+  lineOne:
+   #This will cause a line to scroll if it's length is too long.
+   scrollwhenoutofbounds: false
+   #This determines whether the text will restart once all of the line has been viewed
+   #TRUE = "56789 1234" FALSE = "56789     "
+   scrollrestartonend: false
+   #Speed is measured in ticks per character (TPS) - how long a character should be displayed.
+   scrollspeed: 5
+   #This determines if the text will flash at a specific delay
+   strobe: true
+   strobedelay: 40
+   #This is the secondary text to display after the primary text
+   strobetext: '&cNOW WITH &eSTROBE TEXT!'
+   text: '&cMOTDManager v?plugingetVersion &f- &eChange this in config.yml'
+  lineTwo:
+   scrollwhenoutofbounds: true
+   scrollrestartonend: false
+   scrollspeed: 5
+   strobe: false
+   strobedelay: 20
+   strobetext: ''
+   text: '&6Download the plugin from %website% - Animations coming soon!'
+ offline:
+  lineOne:
+   scrollwhenoutofbounds: false
+   scrollrestartonend: false
+   scrollspeed: 0
+   strobe: false
+   strobedelay: 0
+   strobetext: ''
+   text: '&cMOTDManager &6?servergetServerName, &fis offline'
+  lineTwo:
+   scrollwhenoutofbounds: false
+   scrollrestartonend: false
+   scrollspeed: 0
+   strobe: false
+   strobedelay: 0
+   strobetext: ''
+   text: '&aThe server may just be undergoing a restart'

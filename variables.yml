@@ -1,0 +1,12 @@
+#Variables are declared wihout and enclising characters
+#For example if you want to create a variable called %pname% it should be labeled pname here
+#All variables return a string, and will always be lowercase (except invoking variables), so bear that in mind when creating them.
+
+#You can sometimes use '%%return%%' to return data that can only be optained through the plugin.
+#For such variables prefix them with one of the following
+# ?server, ?plugin, ?permission, ?economy, ?chat *don't use protocollib just yet, its still being setup*
+#And you can invoke any method and request any data return you like so long as it is available in the Spigot/Vault/ProtocolLib API
+variables:
+ website: 'bit.do/ricsweb'
+ ?servergetServerName: '%%return%%'
+ ?plugingetVersion: '%%return%%'
