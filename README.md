@@ -1,5 +1,5 @@
 # MOTD Manager
-A simple lag-free way to buy and sell items to players
+Make your server stand out. Before Login.
 
 ### Copyright
 You may use the source code of MOTD Manager, but you must also make the source code of any project using code from MOTD Manager open sourced and under the same license.
